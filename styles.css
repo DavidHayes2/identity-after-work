@@ -59,7 +59,7 @@ nav {
   place-items: center;
   text-align: center;
   padding: 120px 24px 80px;
-  background: url("assets/hero-bg.jpg") center/cover no-repeat;
+  background: url("images/hero-bg.jpg") center/cover no-repeat;
 }
 
 .hero-overlay {
