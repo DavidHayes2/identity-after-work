@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Start Here | Identity After Work</title>
+
+  <style>
+    :root {
+      --navy: #071b2f;
+      --deep-navy: #04111f;
+      --gold: #d6b46a;
+      --cream: #f7f1e6;
+      --white: #ffffff;
+      --muted: #cbd5df;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(135deg, var(--deep-navy), var(--navy));
+      color: var(--cream);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 28px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(214, 180, 106, 0.25);
+    }
+
+    .brand {
+      font-size: 1.35rem;
+      letter-spacing: 0.5px;
+      color: var(--white);
+    }
+
+    .brand span {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    nav a {
+      color: var(--cream);
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 70px 24px 90px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.78rem;
+      margin-bottom: 22px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 5.2rem);
+      line-height: 1.05;
+      font-weight: 400;
+      margin-bottom: 24px;
+      color: var(--white);
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      color: var(--muted);
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(214, 180, 106, 0.28);
+      border-radius: 22px;
+      padding: 42px;
+      margin: 38px auto;
+      text-align: left;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+    }
+
+    .panel h2 {
+      color: var(--gold);
+      font-size: 1.7rem;
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+
+    .panel p {
+      font-size: 1.08rem;
+      color: var(--cream);
+      margin-bottom: 18px;
+    }
+
+    .default-designed {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .choice {
+      border-left: 3px solid var(--gold);
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, 0.045);
+      border-radius: 14px;
+    }
+
+    .choice strong {
+      display: block;
+      color: var(--white);
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .benefit {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 18px;
+      border-radius: 14px;
+      color: var(--cream);
+    }
+
+    .quick-notes {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin: 42px 0 28px;
+      font-family: Arial, sans-serif;
+    }
+
+    .note {
+      border: 1px solid rgba(214, 180, 106, 0.35);
+      border-radius: 999px;
+      padding: 10px 18px;
+      color: var(--cream);
+      font-size: 0.9rem;
+    }
+
+    .signature {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .signature strong {
+      color: var(--white);
+      font-size: 1.15rem;
+    }
+
+    .form-divider {
+      margin: 58px auto 34px;
+      max-width: 720px;
+      border-top: 1px solid rgba(214, 180, 106, 0.35);
+      padding-top: 34px;
+    }
+
+    .form-divider h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .form-divider p {
+      color: var(--gold);
+      font-size: 1.05rem;
+    }
+
+    .tally-wrap {
+      background: var(--cream);
+      border-radius: 22px;
+      overflow: hidden;
+      padding: 8px;
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    iframe {
+      width: 100%;
+      height: 820px;
+      border: none;
+      border-radius: 16px;
+      background: var(--white);
+    }
+
+    footer {
+      text-align: center;
+      padding: 34px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(214, 180, 106, 0.18);
+    }
+
+    @media (max-width: 760px) {
+      header {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .panel {
+        padding: 28px;
+      }
+
+      .default-designed,
+      .benefits {
+        grid-template-columns: 1fr;
+      }
+
+      iframe {
+        height: 900px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">Identity <span>after Work</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="start-here.html">Start Here</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="eyebrow">Start Here</div>
+
+    <h1>Who are you when your job title disappears?</h1>
+
+    <p class="intro">
+      Most professionals don’t realise how much of their identity was built around their career — until the meetings stop, the structure disappears, and nobody is asking for their input in quite the same way.
+    </p>
+
+    <section class="panel">
+      <h2>This is not just a retirement question.</h2>
+
+      <p>
+        You’ve spent decades building expertise, influence, reputation and rhythm.
+        Then retirement arrives — and the external structure that held much of your identity in place quietly falls away.
+      </p>
+
+      <p>
+        The challenge is rarely just financial. For many experienced professionals, the deeper question is:
+        <strong>what gives life meaning, momentum and relevance now?</strong>
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>There are only two types of retirement.</h2>
+
+      <div class="default-designed">
+        <div class="choice">
+          <strong>Default</strong>
+          Where life slowly loses structure, energy and direction.
+        </div>
+
+        <div class="choice">
+          <strong>Designed</strong>
+          Where you deliberately shape your next chapter with purpose.
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>This short questionnaire will help you see:</h2>
+
+      <div class="benefits">
+        <div class="benefit">Where your identity may still be tied to your career</div>
+        <div class="benefit">What may be missing from your current retirement thinking</div>
+        <div class="benefit">Where you may be at risk of drifting into retirement by default</div>
+        <div class="benefit">What your next chapter could begin to look like by design</div>
+      </div>
+    </section>
+
+    <div class="quick-notes">
+      <div class="note">Takes 2–3 minutes</div>
+      <div class="note">Private and reflective</div>
+      <div class="note">Designed for experienced professionals</div>
+    </div>
+
+    <div class="signature">
+      <strong>David Hayes</strong><br />
+      Retirement Coach — Identity & Reinvention
+    </div>
+
+    <div class="form-divider">
+      <h2>Start here.</h2>
+      <p>Answer honestly — your results may surprise you.</p>
+    </div>
+
+    <div class="tally-wrap">
+      <iframe
+        src="https://tally.so/embed/pb0M9P?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="820"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Retirement Reinvention Questionnaire">
+      </iframe>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Identity after Work. All rights reserved.
+  </footer>
+
+</body>
+</html>
