@@ -1,0 +1,19 @@
+# robots.txt for identityafterwork.gridcoaching.com
+# Instructs search engine crawlers which pages to index
+
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Block any pages you don't want indexed (uncomment and add as needed)
+# Disallow: /thank-you.html
+# Disallow: /client-resources/
+
+# Point crawlers to the sitemap
+Sitemap: https://identityafterwork.gridcoaching.com/sitemap.xml
+
+# ================================================
+# WHEN YOU MOVE TO identityafterwork.com
+# Update the Sitemap line above to:
+# Sitemap: https://identityafterwork.com/sitemap.xml
+# ================================================

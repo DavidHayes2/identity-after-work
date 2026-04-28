@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage — highest priority -->
+  <url>
+    <loc>https://identityafterwork.gridcoaching.com/</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About page -->
+  <url>
+    <loc>https://identityafterwork.gridcoaching.com/about.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ADD NEW PAGES BELOW AS YOUR SITE GROWS -->
+  <!-- Example:
+  <url>
+    <loc>https://identityafterwork.gridcoaching.com/blog.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  -->
+
+  <!-- =============================================
+       WHEN YOU MOVE TO identityafterwork.com
+       Replace all instances of:
+       identityafterwork.gridcoaching.com
+       with:
+       identityafterwork.com
+  ============================================== -->
+
+</urlset>
