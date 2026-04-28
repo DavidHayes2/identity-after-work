@@ -1,15 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Identity after Work | Retirement Coaching</title>
+
+  <!-- =============================================
+       PRIMARY SEO META TAGS
+  ============================================== -->
+  <title>Retirement Coaching for Professionals | Identity after Work</title>
+  <meta name="description" content="Retirement coaching for high-achieving professionals navigating identity, purpose and structure after work. I help driven professionals design life after work with meaning. Book a conversation with Dave Hayes." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dave Hayes" />
+  <link rel="canonical" href="https://identityafterwork.com/" />
+
+  <!-- =============================================
+       OPEN GRAPH — Controls social sharing previews
+       (LinkedIn, Facebook, WhatsApp, iMessage)
+  ============================================== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://identityafterwork.com/" />
+  <meta property="og:title" content="Retirement Coaching for Professionals | Identity after Work" />
+  <meta property="og:description" content="Retirement is not just a financial event — it is an identity transition. I help driven professionals design life after work with purpose, structure and meaning." />
+  <meta property="og:image" content="https://identityafterwork.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Identity after Work — Retirement Coaching with Dave Hayes" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="Identity after Work" />
+
+  <!-- =============================================
+       TWITTER / X CARD
+  ============================================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Retirement Coaching for Professionals | Identity after Work" />
+  <meta name="twitter:description" content="Retirement is not just a financial event — it is an identity transition. I help driven professionals design life after work with purpose, structure and meaning." />
+  <meta name="twitter:image" content="https://identityafterwork.com/assets/og-image.jpg" />
+
+  <!-- =============================================
+       FAVICON
+  ============================================== -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+
+  <!-- =============================================
+       STRUCTURED DATA — Schema.org JSON-LD
+       Tells Google exactly what this business is
+  ============================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Identity after Work",
+    "description": "Retirement coaching for high-achieving professionals navigating identity, purpose and structure after full-time work. Helping driven professionals design life after work with meaning.",
+    "url": "https://identityafterwork.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Dave Hayes",
+      "jobTitle": "Retirement Coach",
+      "url": "https://identityafterwork.com/about.html"
+    },
+    "serviceType": "Retirement Coaching",
+    "knowsAbout": ["Retirement transition", "Identity coaching", "NLP", "Career transition", "Life coaching"],
+    "areaServed": {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceType": "Online and face-to-face coaching",
+      "availableLanguage": "English"
+    }
+  }
+  </script>
+
+  <!-- =============================================
+       PERFORMANCE — Preload hero image if it is
+       used as a CSS background (adjust path as needed)
+  ============================================== -->
+  <!-- <link rel="preload" as="image" href="images/hero.jpg" /> -->
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <a href="index.html" class="logo">Identity after Work</a>
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="#contact" class="nav-cta">Start Here</a>
@@ -17,11 +92,11 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="eyebrow">Retirement coaching for experienced professionals</p>
-        <h1>Who are you when your Job Title disappears?</h1>
+        <h1 id="hero-heading">Who are you when your Job Title disappears?</h1>
         <p class="hero-text">
           Don't face retirement alone! I help driven professionals design life after work to ensure structure, purpose and meaning.
         </p>
@@ -32,10 +107,10 @@
       </div>
     </section>
 
-    <section class="intro section">
+    <section class="intro section" aria-labelledby="intro-heading">
       <div>
         <p class="eyebrow">Identity after Work</p>
-        <h2>Retire to something, not just from something.</h2>
+        <h2 id="intro-heading">Retire to something, not just from something.</h2>
         <p>
           After decades of career momentum, many professionals discover that retirement creates space — but also uncertainty. The calendar changes. The role changes. The sense of being needed can quietly change too.
         </p>
@@ -43,10 +118,18 @@
           This coaching is designed to help you move from accidental retirement to a deliberate next chapter.
         </p>
       </div>
-      <img src="images/profile.png" alt="Portrait of Dave Hayes, Retirement Coach" class="profile-card" />
+      <!-- Width and height added to prevent Cumulative Layout Shift (CLS) -->
+      <img
+        src="images/profile.png"
+        alt="Portrait of Dave Hayes, Retirement Coach"
+        class="profile-card"
+        width="400"
+        height="400"
+        loading="lazy"
+      />
     </section>
 
-    <section class="section cards">
+    <section class="section cards" aria-label="Core coaching areas">
       <article class="card">
         <h3>Identity</h3>
         <p>Explore who you are beyond your job title, role and status.</p>
@@ -61,8 +144,8 @@
       </article>
     </section>
 
-    <section id="contact" class="cta-section">
-      <h2>Ready to design your next chapter?</h2>
+    <section id="contact" class="cta-section" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Ready to design your next chapter?</h2>
       <p>Start with a simple conversation about where you are now and what you want retirement to become.</p>
       <a href="mailto:david.hayes2@tiscali.co.uk" class="button primary">Email me</a>
     </section>
