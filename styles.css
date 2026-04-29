@@ -17,6 +17,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  overflow-y: scroll;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -182,6 +183,10 @@ h3 { font-size: 1.4rem; }
 .card p, .section p {
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+.cards .eyebrow {
+  grid-column: 1 / -1;
 }
 
 .cta-section {
