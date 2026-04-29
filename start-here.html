@@ -6,6 +6,7 @@
 
   <title>Start Here | Identity After Work</title>
 
+  <link rel="stylesheet" href="styles.css" />
   <style>
    
     :root {
@@ -29,36 +30,6 @@
       color: var(--cream);
       line-height: 1.6;
       overflow-y: scroll;
-    }
-
-    header {
-      padding: 28px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(214, 180, 106, 0.25);
-    }
-
-    .brand {
-      font-size: 1.35rem;
-      letter-spacing: 0.5px;
-      color: var(--white);
-    }
-
-    .brand span {
-      color: var(--gold);
-      font-style: italic;
-    }
-
-    nav a {
-      color: var(--cream);
-      text-decoration: none;
-      margin-left: 24px;
-      font-size: 0.95rem;
-    }
-
-    nav a:hover {
-      color: var(--gold);
     }
 
     .container {
@@ -250,12 +221,12 @@
 
 <body>
 
-  <header>
-    <div class="brand">Identity <span>after Work</span></div>
+  <header class="site-header">
+    <a href="index.html" class="logo">Identity <span>after Work</span></a>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="start-here.html">Start Here</a>
+      <a href="start-here.html" class="nav-cta">Start Here</a>
     </nav>
   </header>
 
