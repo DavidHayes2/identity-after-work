@@ -103,16 +103,22 @@
         <div class="hero-actions">
          
 
-	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <a href="" 
+   onclick="Calendly.initPopupWidget({
+     url: 'https://calendly.com/identity-after-work/discovery-call'
+   });return false;"
+   class="button primary">
+   Book a Discovery Call
+		 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
-<script src="https://assets.calendly.com/assets/external/widget.js"></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 <a href="#"
    class="button primary"
    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/identity-after-work/discovery-call'}); return false;">
   Book a Discovery Call
 </a>
-			
+	  
     <section class="section narrow" aria-labelledby="intro-heading">
    
         <p class="eyebrow">Identity after Work</p>
