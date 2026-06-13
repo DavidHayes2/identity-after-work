@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FAQ | Identity after Work</title>
+
+  <meta name="description" content="Answers to common questions about retirement coaching, the Identity after Work scorecard, and what to expect from working with Dave Hayes." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dave Hayes" />
+  <link rel="canonical" href="https://identityafterwork.gridcoaching.com/faq.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://identityafterwork.gridcoaching.com/faq.html" />
+  <meta property="og:title" content="FAQ | Identity after Work" />
+  <meta property="og:description" content="Answers to common questions about retirement coaching, the Identity after Work scorecard, and what to expect." />
+  <meta property="og:image" content="https://identityafterwork.gridcoaching.com/images/og-image.png" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:site_name" content="Identity after Work" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    :root {
+      --navy: #071b2f;
+      --deep-navy: #04111f;
+      --gold: #d6b46a;
+      --cream: #f7f1e6;
+      --white: #ffffff;
+      --muted: #cbd5df;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(135deg, var(--deep-navy), var(--navy));
+      color: var(--cream);
+      line-height: 1.6;
+      overflow-y: scroll;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 70px 24px 90px;
+    }
+
+    .page-intro {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.78rem;
+      margin-bottom: 22px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.1;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: var(--white);
+    }
+
+    .intro {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--muted);
+    }
+
+    /* Category heading */
+    .category-heading {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 52px 0 20px;
+    }
+
+    .category-heading h2 {
+      color: var(--gold);
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: Georgia, serif;
+      white-space: nowrap;
+    }
+
+    .category-line {
+      flex: 1;
+      height: 1px;
+      background: rgba(214, 180, 106, 0.28);
+    }
+
+    /* FAQ accordion items */
+    .faq-item {
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(214, 180, 106, 0.22);
+      border-radius: 16px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-item:hover {
+      border-color: rgba(214, 180, 106, 0.45);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 28px;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: var(--white);
+      font-family: Georgia, serif;
+      font-size: 1.05rem;
+      line-height: 1.45;
+    }
+
+    .faq-question:hover {
+      color: var(--gold);
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid rgba(214, 180, 106, 0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+      font-style: normal;
+      transition: transform 0.25s ease, background 0.2s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      background: rgba(214, 180, 106, 0.15);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 600px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 28px 24px;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      border-top: 1px solid rgba(214, 180, 106, 0.15);
+      padding-top: 18px;
+    }
+
+    .faq-answer-inner p + p {
+      margin-top: 12px;
+    }
+
+    /* CTA panel at bottom */
+    .cta-panel {
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(214, 180, 106, 0.28);
+      border-radius: 22px;
+      padding: 48px 42px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .cta-panel h2 {
+      color: var(--white);
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 14px;
+    }
+
+    .cta-panel p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 560px;
+      margin: 0 auto 28px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 28px;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--deep-navy);
+      font-weight: 700;
+      border: none;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--cream);
+      border: 1px solid rgba(214, 180, 106, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 34px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(214, 180, 106, 0.18);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .faq-question {
+        padding: 18px 20px;
+        font-size: 0.98rem;
+      }
+
+      .faq-answer-inner {
+        padding: 14px 20px 20px;
+      }
+
+      .cta-panel {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Identity <span>after Work</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="start-here.html" class="nav-cta">Start Here</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="page-intro">
+      <div class="eyebrow">Frequently Asked Questions</div>
+      <h1>Questions you might be sitting with.</h1>
+      <p class="intro">
+        If you're wondering whether this is relevant to you, how it works, or what happens next — you'll likely find the answer here.
+      </p>
+    </div>
+
+
+    <!-- SECTION 1: COACHING -->
+
+    <div class="category-heading">
+      <h2>About the Coaching</h2>
+      <div class="category-line"></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I'm not sure coaching is really for someone like me.
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Most of the professionals I work with felt exactly that way before reaching out. Coaching carries an unfair stigma — as though it implies you can't cope, or that you need fixing. It doesn't mean either of those things.</p>
+          <p>The clients I work with are high-achieving, capable individuals. They're seeking coaching not because something is wrong with them, but because they recognise that this transition — from a career-defined identity to something new — is genuinely complex and worth approaching thoughtfully.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        Is this therapy? I don't want to spend sessions talking about my past.
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>This is not therapy. The focus is forward-looking and practical. We explore where you are now, what is working, what isn't, and what you want your next chapter to look like by design rather than by default.</p>
+          <p>My approach draws on NLP — Neuro-Linguistic Programming — which is a structured methodology for understanding how you think, respond, and make decisions. It's precise, analytical, and results-focused. It suits people who prefer clarity over general conversation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What does a coaching session actually look like?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Sessions are structured conversations with a clear purpose. We begin by identifying where you are and what's creating friction or uncertainty. From there, we explore what's driving that — often it's connected to identity, values, or the loss of external structure — and we work on practical strategies to move forward.</p>
+          <p>Sessions are typically held online via video call, at a time that suits you. Each one lasts around 60 minutes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I'm still working. Is this relevant to me yet?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Possibly the most relevant time of all. Many professionals find that the planning most people do before retirement is almost entirely financial — and that the identity and purpose questions only surface once the career stops. By then, some have already drifted into a version of retirement they didn't choose.</p>
+          <p>Working through this while you're still employed means you get to shape what comes next before the structure disappears. That's a significant advantage.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I retired a while ago. Is it too late to benefit from this?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Not at all. The identity questions that retirement raises don't have an expiry date. Whether you retired six months ago or three years ago, if you're finding that something feels flat, unresolved, or missing — that's worth exploring.</p>
+          <p>A number of clients come to me not at the point of retirement, but when the initial novelty has worn off and they're wondering whether this is really what the next twenty years looks like.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What makes this different from other retirement coaching?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Most retirement support focuses on financial planning. Identity after Work focuses on the human side: who you are when your role, title and professional status no longer define you. That's a different and arguably more complex question.</p>
+          <p>My background combines executive-level professional experience with formal NLP training. I bring analytical rigour to what is often treated as a soft, motivational topic. If you prefer substance over inspiration, that distinction matters.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SECTION 2: THE SCORECARD -->
+
+    <div class="category-heading">
+      <h2>Answering the Scorecard</h2>
+      <div class="category-line"></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I'm not sure I'll answer the questions correctly.
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>There are no correct answers. The scorecard is a reflective tool, not an exam. Your responses give a picture of where you are right now — your thinking, your uncertainties, and what you may not yet have fully considered about retirement.</p>
+          <p>The most useful thing you can do is answer honestly rather than aspirationally. The value comes from accuracy, not from presenting a particular version of yourself.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I'm worried about what the results might reveal.
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>That concern, on its own, is often telling. If there's some anxiety about looking honestly at how prepared you are — emotionally, not just financially — that's worth taking seriously. It usually means the questions are relevant.</p>
+          <p>The results aren't a judgement. They're a starting point. Whatever comes up, it's useful information — and information creates options.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        Is my data private? Who sees my answers?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Your responses are handled privately and used only to provide you with relevant feedback and, where you choose to proceed, to inform our conversations. Your data is not shared with third parties, sold, or used for marketing purposes.</p>
+          <p>The scorecard is designed as a reflective tool for you — the results exist to be useful to you, not to be shared without your knowledge or consent.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        Some of the questions feel uncomfortable to think about.
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>That's to be expected — and it's part of the point. The questions are designed to surface areas that many professionals haven't consciously examined: identity, purpose, what gives life meaning when the career structure falls away.</p>
+          <p>If a question lands with discomfort, that's often a sign it's worth sitting with. You don't need to have an answer ready — the act of noticing the discomfort is itself useful information.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I don't know what I think yet. Should I wait until I do?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Not knowing what you think is precisely the starting point this work is designed for. The scorecard isn't asking you to have it all figured out — it's asking where you currently are, including the uncertainties.</p>
+          <p>If you wait until you have clarity, you may be waiting for something that coaching is designed to help you find. The honest answer, even if it is "I don't know," is a perfectly valid and often very useful response.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SECTION 3: NEXT STEPS -->
+
+    <div class="category-heading">
+      <h2>After the Scorecard</h2>
+      <div class="category-line"></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        Am I committing to anything by completing the scorecard?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>No. The scorecard is a free, no-obligation tool. Completing it doesn't sign you up for anything or create any expectation of follow-up from you.</p>
+          <p>You'll receive personalised feedback based on your responses. What happens next is entirely your choice.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What happens after I submit my scorecard responses?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Once you've completed the scorecard, you'll receive a personalised response that reflects what your answers suggest about your current retirement readiness — not just financially, but in terms of identity, purpose, structure and meaning.</p>
+          <p>If what you receive resonates and you'd like to explore further, you can book a discovery call. That's a straightforward conversation — no pressure, no sales script — to see whether working together makes sense for you.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What is the discovery call and what should I expect?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>The discovery call is a 30-minute conversation, typically via video call, with no agenda other than understanding where you are and whether coaching would be useful to you. There's no prepared pitch and no obligation to proceed.</p>
+          <p>I'll ask about what brought you here, what's creating the most uncertainty for you right now, and what you'd want the next chapter to look like. You'll leave with a clearer sense of whether this work is relevant — regardless of whether you choose to take it further.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        How much does coaching cost?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Coaching is a personal investment and the right approach varies by individual. I prefer to discuss fees after a discovery call, once I understand your situation and what would genuinely serve you — rather than presenting a menu of packages before we've spoken.</p>
+          <p>The discovery call is free. Fees for coaching engagement are discussed transparently at that point, with no pressure to decide on the call.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I'm not sure I'm ready to talk to someone. What can I do in the meantime?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Start with the scorecard — it's designed to be a reflective exercise in itself, not just a gateway to a sales call. Many people find that the questions alone prompt useful thinking.</p>
+          <p>You can also follow Identity after Work on Instagram, where I share regular prompts, reflections and ideas on the psychology of retirement transition. There's no requirement to take any next step until — or unless — it feels right.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SECTION 4: ADDITIONAL QUESTIONS -->
+
+    <div class="category-heading">
+      <h2>Things You Might Also Be Wondering</h2>
+      <div class="category-line"></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        My spouse or partner doesn't fully understand what I'm going through. Can coaching help with that?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>It can, indirectly. Retirement often changes relationship dynamics in ways neither partner fully anticipates — the structure of the day, roles in the home, and the sense of identity that each person brings to the relationship all shift.</p>
+          <p>Coaching helps you understand your own experience more clearly, which typically makes it easier to articulate to others. Some clients also find that having language for what they're experiencing makes conversations with a partner significantly more productive.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I've been successful my whole career. Why does retirement feel so unsettling?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>Precisely because you have been successful. The more your identity was built around career achievement — status, expertise, being the person others rely on — the more disorienting it is when that structure quietly disappears.</p>
+          <p>This is not a sign of weakness or ingratitude. It's a predictable consequence of decades of career investment meeting a transition that nobody adequately prepares you for. The discomfort is rational, and it's addressable.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        I feel like I should be happy about retiring. Why don't I feel that way?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>The cultural narrative around retirement — earned rest, freedom, the reward for decades of hard work — doesn't account for the psychological reality of stepping away from something that gave life structure, significance and a sense of being needed.</p>
+          <p>You're not failing to appreciate what you have. You're navigating a genuine identity transition that most people are entirely unprepared for because nobody talks about it honestly. The gap between what you're "supposed" to feel and what you actually feel is one of the things this work addresses directly.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        Will I need to commit to a long programme, or can I start with just a few sessions?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" role="region">
+        <div class="faq-answer-inner">
+          <p>This is something we discuss openly in the discovery call. Some people benefit from a focused short engagement; others find that a more sustained programme serves them better. There's no single right answer.</p>
+          <p>What I don't do is push people into commitments that don't feel right. The conversation about what makes sense for you starts from your situation, not from a predetermined product.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CTA -->
+
+    <div class="cta-panel">
+      <h2>Still have a question?</h2>
+      <p>If something isn't answered here, feel free to get in touch directly or start with the scorecard — it's the simplest first step.</p>
+      <div class="cta-buttons">
+        <a href="start-here.html#scorecard" class="btn btn-primary">Take the Scorecard</a>
+        <a href="mailto:david.hayes2@tiscali.co.uk" class="btn btn-secondary">Email Dave directly</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Identity after Work. Retirement coaching for life after career.
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+
+        document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
