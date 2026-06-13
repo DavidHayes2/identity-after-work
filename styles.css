@@ -326,3 +326,13 @@ footer {
 .secondary-link:hover {
   text-decoration: underline;
 }
+
+.faq-nudge {
+  border-color: var(--brass, #b8943f);
+  background-color: rgba(184, 148, 63, 0.07);
+  color: var(--slate, #2c3e50);
+}
+
+.faq-nudge a {
+  color: var(--brass, #b8943f);
+}
