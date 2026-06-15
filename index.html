@@ -84,7 +84,7 @@
 <body>
   <header class="site-header">
     <a href="index.html" class="logo logo-image-link" aria-label="Identity after Work home">
-      <img src="images/logo-wordmark-white.png" alt="Identity after Work" class="site-wordmark" />
+      <img src="assets/logo-wordmark-white.png" alt="Identity after Work" class="site-wordmark" />
     </a>
     <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
@@ -95,26 +95,38 @@
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-heading">
+    <section class="hero hero-emblem-section" aria-labelledby="hero-heading">
       <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Retirement coaching for experienced professionals</p>
-        <h1 id="hero-heading">Who are you when your Job Title disappears?</h1>
-        <p class="hero-text">
-          Don't face retirement alone! I help driven professionals design life after work to ensure structure, purpose and meaning.
+
+      <div class="hero-content hero-emblem-content">
+        <div class="hero-circle-wrapper">
+          <img src="assets/hero-circle.png" alt="Identity after Work emblem" class="hero-circle" />
+
+          <h1 id="hero-heading" class="hero-question" aria-label="Who are you when your job title disappears?">
+            <span class="hero-line hero-line-1">WHO ARE YOU WHEN</span>
+            <span class="hero-line hero-line-2">YOUR JOB TITLE</span>
+            <span class="hero-line hero-line-3">DISAPPEARS?</span>
+          </h1>
+        </div>
+
+        <div class="hero-divider" aria-hidden="true">
+          <span></span><i></i><span></span>
+        </div>
+
+        <p class="hero-text hero-exec-text">
+          Executive coaching for high-achievers ready to rediscover purpose, clarity and direction.
         </p>
+
         <div class="hero-actions">
-			
           <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js"></script>
 
-<script src="https://assets.calendly.com/assets/external/widget.js"></script>
-
-<a href="#"
-   class="button primary"
-   onclick="Calendly.initPopupWidget({url: 'https://calendly.com/identity-after-work/discovery-call'}); return false;">
-  Book a Discovery Call
-</a>         
-			<a href="about.html" class="button secondary">Meet your coach</a>
+          <a href="#"
+             class="button primary"
+             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/identity-after-work/discovery-call'}); return false;">
+            Book a Discovery Call
+          </a>
+          <a href="about.html" class="button secondary">Meet your coach</a>
         </div>
       </div>
     </section>
@@ -161,4 +173,3 @@
   </footer>
 </body>
 </html>
-
