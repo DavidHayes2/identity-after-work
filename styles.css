@@ -92,7 +92,7 @@ nav a:hover {
   place-items: center;
   text-align: center;
   padding: 120px 24px 80px;
-  background: url("images/hero-bg2.png") center/cover no-repeat;
+  background: url("images/hero-bg.jpg") center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -218,7 +218,6 @@ h3 { font-size: 1.4rem; }
 
 .narrow { max-width: 760px; }
 
-.
 
 .social-links {
   display: flex;
@@ -361,4 +360,165 @@ nav { gap: 14px; font-size: 0.9rem; }
 
 .faq-nudge a {
   color: var(--brass, #b8943f);
+}
+
+/* -------------------------------------------------
+   Hero emblem layout: original-quality circle + crisp HTML headline
+   ------------------------------------------------- */
+.hero-emblem-section {
+  min-height: calc(100vh - 75px);
+  padding: 4px 24px 58px;
+  background:
+    radial-gradient(circle at 50% 36%, rgba(214, 180, 106, 0.16), transparent 34%),
+    radial-gradient(circle at 50% 55%, rgba(30, 82, 126, 0.30), transparent 48%),
+    linear-gradient(135deg, #071b2f 0%, #04111f 52%, #06182a 100%);
+  overflow: hidden;
+}
+
+.hero-emblem-section .hero-overlay {
+  background: linear-gradient(180deg, rgba(4, 17, 31, 0.04), rgba(4, 17, 31, 0.34));
+}
+
+.hero-emblem-content {
+  width: min(920px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-circle-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(68vw, 620px);
+  min-width: 380px;
+  margin: 0 auto;
+  filter: drop-shadow(0 26px 70px rgba(0, 0, 0, 0.32));
+}
+
+.hero-circle {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+
+.hero-question {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  margin: 0;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.58);
+  pointer-events: none;
+}
+
+.hero-line {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 82%;
+  line-height: 1.02;
+  letter-spacing: 0.018em;
+  white-space: nowrap;
+}
+
+/* Individually aligned to the yellow bands in the circle artwork.
+   The top values are the centre-points of the gold bands so the wording sits
+   on the bands rather than between them. */
+.hero-line-1 {
+  top: 20.1%;
+  font-size: clamp(1.36rem, 2.55vw, 2.25rem);
+}
+
+.hero-line-2 {
+  top: 29.5%;
+  font-size: clamp(1.42rem, 2.68vw, 2.35rem);
+}
+
+.hero-line-3 {
+  top: 38.2%;
+  font-size: clamp(1.40rem, 2.62vw, 2.30rem);
+}
+
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: min(300px, 72vw);
+  margin: -8px auto 10px;
+  color: #d6b46a;
+}
+
+.hero-divider span {
+  display: block;
+  height: 1px;
+  flex: 1;
+  background: #d6b46a;
+}
+
+.hero-divider i {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #d6b46a;
+  border-radius: 50%;
+}
+
+.hero-exec-text {
+  max-width: 720px;
+  margin: 0 auto 26px;
+  color: #f7f1e6;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 760px) {
+  .hero-emblem-section {
+    min-height: auto;
+    padding: 14px 18px 52px;
+  }
+
+  .hero-circle-wrapper {
+    width: min(94vw, 460px);
+    min-width: 0;
+  }
+
+  .hero-line {
+    width: 88%;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-line-1 {
+    top: 20.1%;
+    font-size: clamp(0.92rem, 4.25vw, 1.34rem);
+  }
+
+  .hero-line-2 {
+    top: 29.5%;
+    font-size: clamp(0.96rem, 4.55vw, 1.43rem);
+  }
+
+  .hero-line-3 {
+    top: 38.2%;
+    font-size: clamp(0.94rem, 4.40vw, 1.38rem);
+  }
+
+  .hero-divider {
+    margin-top: -2px;
+    margin-bottom: 12px;
+  }
+
+  .hero-exec-text {
+    max-width: 92%;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+  }
 }
