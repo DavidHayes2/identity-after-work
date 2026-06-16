@@ -45,10 +45,9 @@
 
       <div class="cta-area">
         
-        <a href="#"
-   class="primary-button calendly-button">
-          Book a Discovery Call →
-        </a>
+        <button class="primary-button calendly-button">
+    Book a Discovery Call →
+</button>
 
         <a href="https://www.instagram.com/identityafterwork" class="secondary-link">
           Follow Identity After Work on Instagram
@@ -59,16 +58,11 @@
   </main>
   
   <script>
-         document.querySelector('.calendly-button').addEventListener('click', function (e) {
-          e.preventDefault();
-
-          Calendly.initPopupWidget({
-              url: 'https://calendly.com/identity-after-work/discovery-call'
-          });
-
-         return false;
-         });
-  </script>
-
+document.querySelector('.calendly-button').addEventListener('click', function() {
+    Calendly.initPopupWidget({
+        url: 'https://calendly.com/identity-after-work/discovery-call'
+    });
+});
+</script>
 </body>
 </html>
