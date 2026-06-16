@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Next Step | Identity After Work</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,7 +23,7 @@
   <main class="next-step-page">
 
     <section class="next-step-hero">
-      <p class="eyebrow">Retirement Scorecard Check</p>
+      <p class="eyebrow">Retirement Scorecard</p>
 
       <h1>You’ve just taken the first step most people avoid.</h1>
 
@@ -44,25 +45,19 @@
       </div>
 
       <div class="cta-area">
-        
-        <button class="primary-button calendly-button">
-    Book a Discovery Call →
-</button>
+        <a href="#"
+           class="primary-button"
+           onclick="Calendly.initPopupWidget({url: 'https://calendly.com/identity-after-work/discovery-call'}); return false;">
+          Book a Discovery Call →
+        </a>
 
         <a href="https://www.instagram.com/identityafterwork" class="secondary-link">
           Follow Identity After Work on Instagram
         </a>
       </div>
     </section>
-      
+
   </main>
-  
-  <script>
-document.querySelector('.calendly-button').addEventListener('click', function() {
-    Calendly.initPopupWidget({
-        url: 'https://calendly.com/identity-after-work/discovery-call'
-    });
-});
-</script>
+  <script src="https://assets.calendly.com/assets/external/widget.js"></script>
 </body>
 </html>
