@@ -44,7 +44,9 @@
       </div>
 
       <div class="cta-area">
-        <a href="https://identityafterwork.gridcoaching.com/index.html#contact" class="primary-button">
+        
+        <a href="#"
+   class="primary-button calendly-button">
           Book a Discovery Call →
         </a>
 
@@ -54,6 +56,18 @@
       </div>
     </section>
 
+    <script>
+         document.querySelector('.calendly-button').addEventListener('click', function (e) {
+          e.preventDefault();
+
+          Calendly.initPopupWidget({
+              url: 'https://calendly.com/identity-after-work/discovery-call'
+          });
+
+         return false;
+         });
+     </script>
+    
   </main>
 </body>
 </html>
