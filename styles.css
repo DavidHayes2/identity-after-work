@@ -242,6 +242,17 @@ footer {
   padding: 26px 20px;
 }
 
+footer p {
+    margin: 0;
+}
+
+.footer-tagline {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,.7);
+}
+
+
 @media (max-width: 760px) {
   .site-header {
     flex-direction: column;
