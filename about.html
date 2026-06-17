@@ -6,7 +6,7 @@
   <title>About | Identity after Work</title>
 
   <!-- Primary SEO -->
-  <meta name="description" content="Dave Hayes is a retirement coach helping experienced professionals navigate the identity shift after a career. Not financial advice — the human side of retirement." />
+  <meta name="description" content="Dave Hayes is a retirement coach helping experienced professionals navigate the identity shift after a career. Identity after Work focuses on the human side of retirement: purpose, structure, confidence and meaning." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Dave Hayes" />
   <link rel="canonical" href="https://identityafterwork.gridcoaching.com/about.html" />
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://identityafterwork.gridcoaching.com/about.html" />
   <meta property="og:title" content="About Dave Hayes | Identity after Work" />
-  <meta property="og:description" content="Dave Hayes is a retirement coach helping experienced professionals navigate the identity shift after a career. Not financial advice — the human side of retirement." />
+  <meta property="og:description" content="Identity after Work helps experienced professionals move from accidental retirement to a deliberate next chapter." />
   <meta property="og:image" content="https://identityafterwork.gridcoaching.com/images/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -26,15 +26,41 @@
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Dave Hayes | Identity after Work" />
-  <meta name="twitter:description" content="Dave Hayes is a retirement coach helping experienced professionals navigate the identity shift after a career. Not financial advice — the human side of retirement." />
+  <meta name="twitter:description" content="Identity after Work helps experienced professionals move from accidental retirement to a deliberate next chapter." />
   <meta name="twitter:image" content="https://identityafterwork.gridcoaching.com/images/og-image.png" />
 
   <link rel="stylesheet" href="styles.css" />
 
   <style>
+    :root {
+      --navy: #071b2f;
+      --deep-navy: #04111f;
+      --gold: #d6b46a;
+      --cream: #f7f1e6;
+      --white: #ffffff;
+      --muted: #cbd5df;
+      --panel-soft: rgba(255, 255, 255, 0.055);
+      --panel-line: rgba(214, 180, 106, 0.28);
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(135deg, var(--deep-navy), var(--navy));
+      color: var(--cream);
+      line-height: 1.6;
+      overflow-y: scroll;
+    }
+
+    .about-container {
+      width: min(1040px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 70px 0 90px;
+    }
+
     .page-intro {
+      max-width: 860px;
+      margin: 0 auto 54px;
       text-align: center;
-      margin-bottom: 60px;
     }
 
     .eyebrow {
@@ -48,15 +74,249 @@
     }
 
     h1 {
-      font-size: clamp(2.2rem, 5vw, 4rem);
-      line-height: 1.1;
+      font-size: clamp(2.4rem, 5.4vw, 4.7rem);
+      line-height: 1.05;
       font-weight: 400;
-      margin-bottom: 20px;
+      margin: 0 0 22px;
       color: var(--white);
     }
+
+    h2 {
+      font-size: clamp(1.8rem, 3.4vw, 3rem);
+      line-height: 1.1;
+      font-weight: 400;
+      margin: 0 0 20px;
+      color: var(--white);
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      font-weight: 400;
+      margin: 0 0 10px;
+      color: var(--gold);
+    }
+
+    .intro {
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: clamp(1.08rem, 2vw, 1.3rem);
+      color: var(--muted);
+    }
+
+    .founder-strip {
+      display: grid;
+      grid-template-columns: 0.78fr 1.22fr;
+      gap: 34px;
+      align-items: center;
+      margin: 0 auto 52px;
+      padding: 34px;
+      border: 1px solid var(--panel-line);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.045);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+    }
+
+    .founder-photo-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .founder-photo {
+      width: min(100%, 310px);
+      border-radius: 24px;
+      border: 1px solid rgba(214, 180, 106, 0.28);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.32);
+    }
+
+    .founder-copy p {
+      color: var(--muted);
+      font-size: 1.07rem;
+      margin: 0 0 16px;
+    }
+
+    .founder-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .panel {
+      background: var(--panel-soft);
+      border: 1px solid var(--panel-line);
+      border-radius: 22px;
+      padding: 42px;
+      margin: 38px auto;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.20);
+    }
+
+    .panel-narrow {
+      max-width: 900px;
+    }
+
+    .panel p {
+      color: var(--muted);
+      font-size: 1.06rem;
+      margin: 0 0 18px;
+    }
+
+    .panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .question-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .question-card {
+      border-left: 3px solid var(--gold);
+      background: rgba(255, 255, 255, 0.045);
+      border-radius: 14px;
+      padding: 18px 20px;
+      color: var(--cream);
+      font-size: 1rem;
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin: 42px 0;
+    }
+
+    .area-card {
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(214, 180, 106, 0.22);
+      border-radius: 18px;
+      padding: 24px;
+      min-height: 170px;
+    }
+
+    .area-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .cta-panel {
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(214, 180, 106, 0.28);
+      border-radius: 24px;
+      padding: 50px 34px;
+      margin: 56px auto 44px;
+      text-align: center;
+      max-width: 900px;
+    }
+
+    .cta-panel p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 660px;
+      margin: 0 auto 28px;
+    }
+
+    .connect-panel {
+      max-width: 840px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 18px;
+    }
+
+    .connect-panel h2 {
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+    }
+
+    .connect-panel p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0 auto 24px;
+      max-width: 650px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .social-links a {
+      border: 1px solid rgba(214, 180, 106, 0.28);
+      border-radius: 999px;
+      padding: 12px 18px;
+      background: rgba(255, 255, 255, 0.055);
+      color: var(--cream);
+      text-decoration: none;
+    }
+
+    .faq-nudge {
+      margin: 28px auto 0;
+      max-width: 560px;
+      padding: 16px 20px;
+      border: 1px solid rgba(214, 180, 106, 0.28);
+      border-radius: 14px;
+      background: rgba(214, 180, 106, 0.07);
+    }
+
+    .faq-nudge p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .faq-nudge a {
+      color: var(--gold);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .footer-tagline {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      opacity: 0.75;
+    }
+
+    @media (max-width: 900px) {
+      .founder-strip {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .areas-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .about-container {
+        width: min(100% - 32px, 1040px);
+        padding: 54px 0 72px;
+      }
+
+      .founder-strip,
+      .panel,
+      .cta-panel {
+        padding: 28px;
+      }
+
+      .question-grid,
+      .areas-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .founder-photo {
+        width: min(100%, 260px);
+      }
+    }
   </style>
-  
 </head>
+
 <body>
   <header class="site-header">
     <a href="index.html" class="logo logo-image-link" aria-label="Identity after Work home">
@@ -70,62 +330,121 @@
     </nav>
   </header>
 
-  <main>
-    <section class="about-hero section">
-      <img src="images/profile.png" alt="Portrait of Dave Hayes, Retirement Coach" class="about-photo" />
-      <div>
-        <p class="eyebrow">About Identity after Work</p>
-        <h2>Helping experienced professionals design life after work with purpose, structure and meaning</h2>
-        <p>
-          Identity after Work supports experienced professionals who are approaching retirement, recently retired, or beginning to wonder what comes next.
-        </p>
-        <p>
-          The focus is not financial advice. It is the human side of retirement: identity, confidence, structure, contribution and meaning.
-        </p>
-        <h3>Why I created Identity after Work</h3>
-        <p>After decades of professional achievement, many people discover that retirement is not just a financial transition — it is an identity transition.</p>
-        <p>Questions begin to emerge:</p>
-        <ul>
-          <li>Who am I without my role?</li>
-          <li>Where does my experience still matter?</li>
-          <li>What does a meaningful week now look like?</li>
-          <li>What comes next?</li>
-        </ul>
-        <p>Identity after Work was created to help experienced professionals move from accidental retirement to a deliberate next chapter.</p>        
+  <main class="about-container">
+    <section class="page-intro" aria-labelledby="about-heading">
+      <div class="eyebrow">About</div>
+      <h1 id="about-heading">Helping experienced professionals move from accidental retirement to a deliberate next chapter.</h1>
+      <p class="intro">
+        Identity after Work supports people approaching retirement, recently retired, or beginning to wonder what life after career is really meant to become.
+      </p>
+    </section>
 
-        <h3>About Dave Hayes</h3>
-        <p>With more than 25 years' experience in leadership, technology, coaching and AI, I understand the challenge of navigating change and reinvention.</p>
-        <p>I have a passaion for developing individuals. Identity after Work combines professional experience with a deep interest in the psychology of transition and the human side of retirement.</p>
-        <p>My focus is not financial advice.</p>   
-        <p>It is helping experienced professionals rediscover purpose, confidence and direction after career.</p>
+    <section class="founder-strip" aria-label="About Dave Hayes">
+      <div class="founder-photo-wrap">
+        <img src="images/profile.png" alt="Portrait of Dave Hayes, Retirement Coach" class="founder-photo" />
+      </div>
+
+      <div class="founder-copy">
+        <p class="eyebrow">Dave Hayes</p>
+        <h2>Retirement coach for the human side of life after work.</h2>
+        <p>
+          The focus here is not financial advice. It is the identity transition that can happen when the role, structure and professional status of work begin to fall away.
+        </p>
+        <p>
+          This work is for experienced professionals who want more than simply stopping. It is for people who want to design what comes next with purpose, structure and meaning.
+        </p>
       </div>
     </section>
 
-<section id="contact" class="cta-section" aria-labelledby="cta-heading">
-       <h2 id="cta-heading">Ready to begin?</h2>
-       <p>Start with the Retirement Scorecard — it takes 2-3 minutes. It gives you a clearer picture of where you are right now, and where a little more intentionality might make the biggest difference.</p>
-       <a href="start-here.html#scorecard" class="button primary">Start with the Retirement Scorecard</a>
+    <section class="panel panel-narrow" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why I created Identity after Work</h2>
+      <p>
+        After decades of professional achievement, many people discover that retirement is not just a financial transition — it is an identity transition.
+      </p>
+      <p>
+        The calendar changes. The rhythm changes. The sense of being needed can quietly change too. Questions begin to emerge that may never have had space before.
+      </p>
+
+      <div class="question-grid" aria-label="Common retirement identity questions">
+        <div class="question-card">Who am I without my role?</div>
+        <div class="question-card">Where does my experience still matter?</div>
+        <div class="question-card">What does a meaningful week now look like?</div>
+        <div class="question-card">What comes next?</div>
+      </div>
+
+      <p>
+        Identity after Work was created to help experienced professionals move from accidental retirement to a deliberate next chapter.
+      </p>
     </section>
-    
-   <section class="section narrow">
-  <h2>Connect with Identity after Work</h2>
-  <p>Follow for reflections, prompts and practical ideas on designing a meaningful life after career.</p>
-  <div class="social-links">
-    <a href="https://www.instagram.com/identityafterwork" target="_blank" rel="noopener">Instagram: @identityafterwork</a>
-    <a href="https://www.facebook.com/IdentityafterWork" target="_blank" rel="noopener">Facebook: Identity after Work</a>
-  </div>
-  <div style="margin-top: 28px; padding: 16px 20px; border: 1px solid; border-radius: 8px;" class="faq-nudge">
-    <p style="margin: 0; font-size: 0.95rem;">Questions about coaching? <a href="faq.html" style="font-weight: 600; text-decoration: underline;">See the FAQ →</a></p>
-  </div>
-</section>
+
+    <section aria-labelledby="areas-heading">
+      <div class="page-intro" style="margin-bottom: 28px;">
+        <div class="eyebrow">What we explore</div>
+        <h2 id="areas-heading">The areas that shape life after career.</h2>
+      </div>
+
+      <div class="areas-grid">
+        <article class="area-card">
+          <h3>Identity</h3>
+          <p>Who you are beyond your title, role and professional status.</p>
+        </article>
+
+        <article class="area-card">
+          <h3>Structure</h3>
+          <p>How to create rhythm, energy and momentum after full-time work.</p>
+        </article>
+
+        <article class="area-card">
+          <h3>Purpose</h3>
+          <p>Where your experience can still make a meaningful contribution.</p>
+        </article>
+
+        <article class="area-card">
+          <h3>Reinvention</h3>
+          <p>What your next chapter could look like when it is designed, not drifted into.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel panel-narrow" aria-labelledby="dave-heading">
+      <h2 id="dave-heading">About Dave Hayes</h2>
+      <p>
+        With more than 25 years' experience in leadership, technology, coaching and AI, I understand the challenge of navigating change, uncertainty and reinvention.
+      </p>
+      <p>
+        I have a passion for developing individuals and helping people make sense of complex transitions. Identity after Work combines professional experience with a deep interest in the psychology of transition and the human side of retirement.
+      </p>
+      <p>
+        My focus is not financial advice. It is helping experienced professionals rediscover purpose, confidence and direction after career.
+      </p>
+    </section>
+
+    <section id="contact" class="cta-panel" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Ready to begin?</h2>
+      <p>
+        Start with the Retirement Scorecard — it takes 2–3 minutes and gives you a clearer picture of where life after work may need more identity, structure, purpose or direction.
+      </p>
+      <a href="start-here.html#scorecard" class="button primary">Start with the Retirement Scorecard</a>
+    </section>
+
+    <section class="connect-panel" aria-labelledby="connect-heading">
+      <h2 id="connect-heading">Connect with Identity after Work</h2>
+      <p>Follow for reflections, prompts and practical ideas on designing a meaningful life after career.</p>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/identityafterwork" target="_blank" rel="noopener">Instagram: @identityafterwork</a>
+        <a href="https://www.facebook.com/IdentityafterWork" target="_blank" rel="noopener">Facebook: Identity after Work</a>
+      </div>
+
+      <div class="faq-nudge">
+        <p>Questions about coaching? <a href="faq.html">See the FAQ →</a></p>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>© 2026 Identity after Work.</p>
-
-    <p class="footer-tagline">
-        Helping experienced professionals design life after work.
-    </p>
-</footer>
+    <p class="footer-tagline">Helping experienced professionals design life after work.</p>
+  </footer>
 </body>
 </html>
